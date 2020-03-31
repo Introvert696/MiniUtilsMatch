@@ -31,16 +31,29 @@ elif(vvod == 2):
     print("1.Теорема пифагора \n2.Логарифм \n3.Площадь 4-х угольника \n5.Площадь круга\n")
     vvod1 = int(input("> "))
     if (vvod1 == 1):
-        print('Введите 2 стороны прямоугольного стреугольника\n')
+        print('Введите 2 стороны прямоугольного треугольника\n')
         a = int(input('a = \n'))
         b = int(input('b = '))
         cen = float(sqrt(a**2 + b**2))
+        cen = round(cen, 3)                 #Округление до 3 знаков после точки
         c = str(cen)
         print("Результат: ",c) 
     elif (vvod1 == 2):
-        print('Saglushka')
+        print('Логарифм числа x по основанию y\n')
+        x = int(input('Введите x: \n> '))
+        y = int(input('Введите y: \n> '))
+        resultlog = float(log(x, y))
+        relog = str(resultlog)
+        print("Result", relog)
     elif (vvod1 == 3):
-        print('Saglushka')
+        print('Площадь 4-х угольника \nДля начала введите ваши 4 стороны')
+        a = int(input("Введите 1 сторону: "))
+        b = int(input("Введите 2 сторону: "))
+        c = int(input("Введите 3 сторону: "))
+        d = int(input("Введите 4 сторону: "))
+        ploshad = a * b * c * d
+        ploshad = str(ploshad)
+        print("Результат: ",ploshad)
     elif (vvod1 == 4):
         print('Saglushka')
     elif (vvod1 == 5):
