@@ -2,7 +2,7 @@ from math import *
 
 print("Выберете что вам нужно")
 print("1.Простое вычисление")
-print("2.Вычисления производной") #Допилить другие функции
+print("2.Разные формулы") #Допилить другие функции
 vvod = int(input("\n>"))
 if(vvod == 1):
     print("It's work")
@@ -26,6 +26,22 @@ if(vvod == 1):
     else:
         print("Netu")
 elif(vvod == 2):
-    print("В разработке")
+    #print("В разработке")
+    print('Выберете что вам нужно: ')
+    print("1.Теорема пифагора \n2.Логарифм \n3.Площадь 4-х угольника \n5.Площадь круга\n")
+    vvod1 = int(input("> "))
+    if (vvod1 == 1):
+        print('Введите 2 стороны прямоугольного стреугольника\n')
+        a = input('a = \n')
+        b = input('b = ')
+        c = int(sqrt(a**2 + b**2))
+        c = str(c)
+        print("3 сторона равна: " + с) 
+    elif (vvod1 == 2):
+    elif (vvod1 == 3):
+    elif (vvod1 == 4):
+    elif (vvod1 == 5):
+    else:
+        print("Нету такого ответа")
 else:
     print("Not working")
