@@ -28,7 +28,7 @@ if(vvod == 1):
 elif(vvod == 2):
     #print("В разработке")
     print('Выберете что вам нужно: ')
-    print("1.Теорема пифагора \n2.Логарифм \n3.Площадь 4-х угольника \n5.Площадь круга\n")
+    print("1.Теорема пифагора \n2.Логарифм \n3.Площадь 4-х угольника \n4.Площадь круга\n")
     vvod1 = int(input("> "))
     if (vvod1 == 1):
         print('Введите 2 стороны прямоугольного треугольника\n')
@@ -55,9 +55,14 @@ elif(vvod == 2):
         ploshad = str(ploshad)
         print("Результат: ",ploshad)
     elif (vvod1 == 4):
-        print('Saglushka')
+        print('Площадь круга')
+        res = int(input("Введите радиус круга: "))
+        pis = 3.14
+        otvet = float(2 * pis * res)
+        otvet = str(otvet)
+        print("Радиус приблизительно: ",otvet)
     elif (vvod1 == 5):
-        print('Saglushka')
+        print('пасхалОчка')
     else:
         print("Нету такого ответа")
 else:
