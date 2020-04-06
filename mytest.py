@@ -1,62 +1,20 @@
-def whenQuest():
-    print("Введите количество посетителей: ")
-    try:
-        quantityQuest = int(input(">"))
-        return quantityQuest
-    except:
-        print("Введите число: ")
-        return whenQuest()
-################################################33
-def whoThisName():
-    print("Введи имена приглашенных: ")
-    try:
-        nameQuest = int(input(">"))
-        return nameQuest
-    except :
-        print("Введите число: ")
-        return whoThisName()
+from tkinter import *
 
-def rangeArr():
-    print('ww')
+root = Tk() #Создается окно
+rootTextArea = Entry(root, width="20")  #Textarea
+rootButtons = Button(root, text="Ssend")
+rootLabel = Label(root, bg='black', fg="white", width=20)
+##################################################################################
+def strToSort(event):
+    getText = rootTextArea.get()        #Получение с поля ввода
+    getText = getText.split()               # склеивание всего
+    getText.sort()                      #сортировка
+    rootLabel['text'] = ' '.join(getText)
 
-def selectVarint():
-    try:
-        viborVarianta = int(input('>'))
-        return viborVarianta
-    except:
-        print("Введите число")
-        return selectVarint()
+rootButtons.bind('<Button-1>', strToSort)
 
-
-def __main__():
-    quantityQuest = whenQuest()
-    quantityPar = quantityQuest
-    #print(quantityQuest)
-    #nameQuest = whoThisName()
-    print("Введите имена")
-    arrName = []
-    i = 0
-    while (i < quantityPar):
-        nameMe = input('>')
-        arrName.append(nameMe)
-        i = i + 1
-    print("Показать список приглашенных? ")
-    print('1.yes \n2.No')
-    varianT = selectVarint()
-    if(varianT == 1):
-        print("Вы пригласили: ")
-        i = 0  
-        while(i < len(arrName)):
-            print(arrName[i])
-            i += 1
-
-    else:
-        
-    
-
-        
-    
-    
-
-
-__main__()
+##################################################################################
+rootTextArea.pack()
+rootButtons.pack()
+rootLabel.pack()
+root.mainloop()
