@@ -1,4 +1,2 @@
 # MiniUtilsMatch
-Мини тулсы, для математики
-Это простой набор разных функций, примеров, и всякой херни.
-Делаю ради пракики в сфере программирования на Python
+This is a program for mathematicians with a set of simple formulas for solving specific problems.
